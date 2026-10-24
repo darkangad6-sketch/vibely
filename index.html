@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibely - Your Social World</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #090914;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #29243e;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(90deg,#00e5ff,#a855f7,#ff3ca6);
+  color: transparent;
+  background-clip: text;
+}
+button {
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(100deg,#00cfff,#a855f7,#ed3bba);
+  color: white;
+  font-weight: bold;
+}
+main {
+  max-width: 650px;
+  margin: 45px auto;
+  padding: 20px;
+}
+.hero {
+  text-align: center;
+  padding: 55px 15px;
+  border: 1px solid #373052;
+  border-radius: 25px;
+  background: linear-gradient(145deg,#17142d,#111020);
+}
+h1 { font-size: 43px; margin-bottom: 12px; }
+p { color: #b9b4cc; line-height: 1.6; }
+.card {
+  background: #171525;
+  border: 1px solid #302a49;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #49415e;
+  background: #0c0b17;
+  color: white;
+}
+footer {
+  text-align: center;
+  color: #858098;
+  padding: 25px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">✦ Vibely</div>
+  <button onclick="document.getElementById('join').scrollIntoView()">Join Vibely</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div style="font-size:55px">✦</div>
+    <h1>Your Social World.</h1>
+    <p>Meet people. Share moments. Create your own world.</p>
+    <button onclick="document.getElementById('join').scrollIntoView()">
+      Get Started
+    </button>
+  </section>
+
+  <section class="card">
+    <h2>✨ Discover Vibely</h2>
+    <p>Share your creativity, connect with friends and explore new communities.</p>
+  </section>
+
+  <section class="card">
+    <h2>📸 Moments</h2>
+    <p>Share your favourite memories with your audience.</p>
+  </section>
+
+  <section class="card">
+    <h2>🎬 Loops</h2>
+    <p>Discover short videos and creative content.</p>
+  </section>
+
+  <section class="card" id="join">
+    <h2>Join Vibely</h2>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Email address">
+    <button onclick="alert('Welcome to the Vibely demo!')">
+      Explore Vibely
+    </button>
+    <p>This is a design preview. Account creation isn't connected yet.</p>
+  </section>
+</main>
+
+<footer>© 2026 Vibely. Your Social World.</footer>
+</body>
+</html>
